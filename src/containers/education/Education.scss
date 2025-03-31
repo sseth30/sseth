@@ -48,3 +48,12 @@
     font-size: 16px;
   }
 }
+
+.education-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px; // Optional, for clean corners
+  background-color: white; // Optional, for transparent logos
+  padding: 5px; // Optional, adds spacing inside the frame
+}
