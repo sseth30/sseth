@@ -119,20 +119,21 @@ const bigProjects = {
   subtitle: "Select projects showcasing applied engineering & software skills",
   projects: [
     {
-      image: require("./assets/images/project1.png"),
+      image: require("./assets/images/studysphere.png"),
+      projectName: "StudySphere",
+      projectDesc: "An educational tool built to help students with homework using AI-generated explanations, summaries, and interactive interfaces.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/sseth30/studysphere" }]
+    },
+    {
+      image: require("./assets/images/dialectify.png"),
       projectName: "Dialectify",
       projectDesc: "NLP-powered tool that detects and converts regional dialects into standardized English using PyTorch.",
       footerLink: [{ name: "GitHub", url: "https://github.com/sseth30/Dialectify" }]
-    },
-    {
-      image: require("./assets/images/project2.png"),
-      projectName: "Tic-Tac-Toe AI",
-      projectDesc: "A Python-based game that determines the winner from any board state using logic and data structures.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/sseth30/TicTacToeAI" }]
     }
   ],
   display: true
 };
+
 
 const achievementSection = {
   title: emoji("Certifications 🏆"),
