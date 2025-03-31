@@ -95,7 +95,7 @@ const workExperiences = {
     },
     {
       role: "Founder",
-      company: "Meals for One, Meals for All (MOMA)",
+      company: "Meals for One, Meals for All",
       companylogo: require("./assets/images/momaLogo.png"),
       logoClass: "experience-logo-large",
       date: "Aug 2021 – May 2023",
