@@ -19,7 +19,7 @@ const greeting = {
   subTitle: emoji(
     "Computer Engineering @ Georgia Tech | AI/ML + Hardware Design | Founder of MOMA | Open to Collaborate 💻🔧🐝"
   ),
-  resumeLink: "/Resume.pdf", 
+  resumeLink: "https://sseth30.github.io/sseth/Resume.pdf", 
   displayGreeting: true
 };
 
