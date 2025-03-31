@@ -78,17 +78,13 @@
 }
 
 .experience-roundedimg {
-  position: absolute;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  box-shadow: none; // Shadow handled by wrapper
+  position: static; // REMOVE absolute positioning
+  margin: 0;
 }
 
 .experience-text-role {
@@ -170,9 +166,8 @@
   justify-content: center;
   overflow: hidden;
 
+
   img.experience-roundedimg {
-    width: 100%;
-    height: 100%;
     object-fit: contain;
   }
 
