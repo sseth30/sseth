@@ -60,7 +60,7 @@ const educationInfo = {
       logo: require("./assets/images/gtLogo.png"),
       subHeader: "B.S. in Computer Engineering",
       duration: "Jan 2025 – May 2026",
-      desc: "Threads: Distributed Systems & Software Design, Systems & Architecture. Relevant Coursework: Programming HW/SW Systems, Object-Oriented Design, Intro to ECE."
+      desc: "Threads: Distributed Systems & Software Design, Systems & Architecture | Relevant Coursework: Programming HW/SW Systems, Object-Oriented Design, Intro to ECE"
     },
     {
       schoolName: "University of Georgia",
@@ -89,6 +89,7 @@ const workExperiences = {
       role: "Undergraduate Researcher - VIPR",
       company: "University of Georgia",
       companylogo: require("./assets/images/ugaLogo.png"),
+      logoClass: "experience-logo-small",
       date: "Aug 2024 – Dec 2024",
       desc: "Developed robotics + AI solutions for precision agriculture. Built an autonomous floor egg detection robot using YOLOv11 and RESTful Python interfaces. Awarded VIPR scholarship."
     },
@@ -96,6 +97,7 @@ const workExperiences = {
       role: "Founder",
       company: "Meals for One, Meals for All (MOMA)",
       companylogo: require("./assets/images/momaLogo.png"),
+      logoClass: "experience-logo-large",
       date: "Aug 2021 – May 2023",
       desc: "Founded and scaled nonprofit addressing food insecurity with 500+ members and 250+ volunteer hours. Partnered with nonprofits across GA and CA."
     },
@@ -103,6 +105,7 @@ const workExperiences = {
       role: "Sales Floor Team Member",
       company: "Target",
       companylogo: require("./assets/images/targetLogo.png"),
+      logoClass: "experience-logo-small",
       date: "Jan 2023 – May 2023",
       desc: "Worked collaboratively with team members, gaining experience in communication, initiative, and reliability."
     }
