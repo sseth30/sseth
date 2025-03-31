@@ -15,7 +15,7 @@ const illustration = {
 
 const greeting = {
   username: "Satchit Seth",
-  title: "Hi, I'm Satchit",
+  title: "Hi, I'm Satcht",
   subTitle: emoji(
     "Computer Engineering @ Georgia Tech | AI/ML + Hardware Design | Founder of MOMA | Open to Collaborate 💻🔧🐝"
   ),
