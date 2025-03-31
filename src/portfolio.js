@@ -25,7 +25,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/sseth30",
-  linkedin: "https://www.linkedin.com/in/sseth30/",
+  linkedin: "https://www.linkedin.com/in/satchitseth/",
   gmail: "sseth60@gatech.edu",
   display: true
 };
