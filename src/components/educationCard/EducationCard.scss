@@ -138,8 +138,8 @@
   height: 60px;
   object-fit: contain;
   border-radius: 8px;
-  background-color: white;   // Optional, for clean contrast
-  padding: 5px;              // Optional, adds breathing room
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); // Optional: subtle depth
+  background-color: transparent;   // Optional, for clean contrast
+  padding: 0;              // Optional, adds breathing room
+  box-shadow: none; // Optional: subtle depth
 }
 
