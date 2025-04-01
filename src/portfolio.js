@@ -17,7 +17,7 @@ const greeting = {
   username: "Satchit Seth",
   title: "Hi, I'm Satchit",
   subTitle: emoji(
-    "2nd-year CompE @ Georgia Tech | Bridging AI/ML and Hardware"
+    "2nd-year Computer Engineering @ Georgia Tech"
   ),
   resumeLink: "https://sseth30.github.io/sseth/Resume.pdf",
   displayGreeting: true
