@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -28,11 +29,11 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/sseth/#" className="logo">
+        <HashLink smooth to="/#">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </a>
+        </HashLink>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -44,49 +45,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="/sseth/#skills">Skills</a>
+              <HashLink smooth to="/#skills">Skills</HashLink>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="/sseth/#experience">Work Experiences</a>
+              <HashLink smooth to="/#experience">Work Experiences</HashLink>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="/sseth/#projects">Open Source</a>
+              <HashLink smooth to="/#projects">Open Source</HashLink>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="/sseth/#achievements">Achievements</a>
+              <HashLink smooth to="/#achievements">Achievements</HashLink>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="/sseth/#blogs">Blogs</a>
+              <HashLink smooth to="/#blogs">Blogs</HashLink>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="/sseth/#talks">Talks</a>
+              <HashLink smooth to="/#talks">Talks</HashLink>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="/sseth/#resume">Resume</a>
+              <HashLink smooth to="/#resume">Resume</HashLink>
             </li>
           )}
           <li>
-            <a href="/sseth/#contact">Contact Me</a>
+            <HashLink smooth to="/#contact">Contact Me</HashLink>
           </li>
           <li>
             <Link to="/about">About Me</Link>
           </li>
           <li>
-            <div>
-              <ToggleSwitch />
-            </div>
+            <ToggleSwitch />
           </li>
         </ul>
       </header>
