@@ -1,17 +1,18 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import {Fade} from "react-reveal";
+import { HashLink } from "react-router-hash-link";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -21,26 +22,18 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+              <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
+                {greeting.title} <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
+              <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <HashLink smooth to="/#contact" className="download-link-button">
+                  <Button text="Contact me" />
+                </HashLink>
                 {greeting.resumeLink && (
                   <a
                     href={greeting.resumeLink}
@@ -51,7 +44,7 @@ export default function Greeting() {
                     <Button text="Download my resume" />
                   </a>
                 )}
-                  <Link to="/about" className="download-link-button">
+                <Link to="/about" className="download-link-button">
                   <Button text="About Me" />
                 </Link>
               </div>
@@ -64,7 +57,7 @@ export default function Greeting() {
               <img
                 alt="man sitting on table"
                 src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+              />
             )}
           </div>
         </div>
