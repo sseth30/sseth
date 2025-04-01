@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Fade } from "react-reveal";
+import { Link as ScrollLink } from "react-scroll";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -31,7 +32,7 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <HashLink smooth to="/#contact" className="download-link-button">
+                <Link to="/contact" className="download-link-button">
                   <Button text="Contact me" />
                 </HashLink>
                 {greeting.resumeLink && (
