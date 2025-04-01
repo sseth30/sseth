@@ -19,7 +19,7 @@ const greeting = {
   subTitle: emoji(
     "Computer Engineering @ Georgia Tech | AI/ML + Hardware Design | Founder of MOMA | Open to Collaborate 💻🔧🐝"
   ),
-  resumeLink: "https://sseth30.github.io/sseth/Resume.pdf", 
+  resumeLink: "https://sseth30.github.io/sseth/Resume.pdf",
   displayGreeting: true
 };
 
@@ -32,22 +32,25 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I bridge the gap between cutting-edge technology and practical applications.",
+  subTitle:
+    "I bridge the gap between cutting-edge technology and practical applications.",
   skills: [
     emoji("⚡ Build intelligent systems using AI/ML for real-world problems"),
-    emoji("⚡ Design efficient circuits and work across the hardware-software boundary"),
+    emoji(
+      "⚡ Design efficient circuits and work across the hardware-software boundary"
+    ),
     emoji("⚡ Develop Python, Java, C++, and embedded systems applications")
   ],
   softwareSkills: [
-    { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
-    { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
-    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "reactjs", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "java", fontAwesomeClassname: "fab fa-java" },
-    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "vhdl", fontAwesomeClassname: "fas fa-microchip" },
-    { skillName: "git", fontAwesomeClassname: "fab fa-git-alt" }
+    {skillName: "html-5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "reactjs", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "java", fontAwesomeClassname: "fab fa-java"},
+    {skillName: "C++", fontAwesomeClassname: "fas fa-code"},
+    {skillName: "vhdl", fontAwesomeClassname: "fas fa-microchip"},
+    {skillName: "git", fontAwesomeClassname: "fab fa-git-alt"}
   ],
   display: true
 };
@@ -75,9 +78,9 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "AI/ML & Python", progressPercentage: "80%" },
-    { Stack: "Hardware & Circuits", progressPercentage: "75%" },
-    { Stack: "Software Engineering", progressPercentage: "70%" }
+    {Stack: "AI/ML & Python", progressPercentage: "80%"},
+    {Stack: "Hardware & Circuits", progressPercentage: "75%"},
+    {Stack: "Software Engineering", progressPercentage: "70%"}
   ],
   displayCodersrank: false
 };
@@ -124,19 +127,24 @@ const bigProjects = {
     {
       image: require("./assets/images/studysphere.png"),
       projectName: "StudySphere",
-      projectDesc: "An educational tool built to help students with homework using AI-generated explanations, summaries, and interactive interfaces.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/sseth30/studysphere" }]
+      projectDesc:
+        "An educational tool built to help students with homework using AI-generated explanations, summaries, and interactive interfaces.",
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/sseth30/studysphere"}
+      ]
     },
     {
       image: require("./assets/images/dialectify.png"),
       projectName: "Dialectify",
-      projectDesc: "NLP-powered tool that detects and converts regional dialects into standardized English using PyTorch.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/sseth30/Dialectify" }]
+      projectDesc:
+        "NLP-powered tool that detects and converts regional dialects into standardized English using PyTorch.",
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/sseth30/Dialectify"}
+      ]
     }
   ],
   display: true
 };
-
 
 const achievementSection = {
   title: emoji("Certifications 🏆"),
