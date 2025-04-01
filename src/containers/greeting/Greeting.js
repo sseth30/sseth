@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import { Link } from "react-router-dom";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
@@ -50,13 +51,9 @@ export default function Greeting() {
                     <Button text="Download my resume" />
                   </a>
                 )}
-                  <a
-                    href="/about"
-                    rel="noopener noreferrer"
-                    className="download-link-button"
-                  >
-                    <Button text="About Me" />
-                  </a>
+                  <Link to="/about" className="download-link-button">
+                  <Button text="About Me" />
+                </Link>
               </div>
             </div>
           </div>
