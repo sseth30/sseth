@@ -78,16 +78,16 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+          <a href="#contact">Contact Me</a>
           </li>
           <li>
-            <Link to="/about">About Me</Link>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+        <Link to="/about">About Me</Link>
+      </li>
+        <li>
+        <div>
+        <ToggleSwitch />
+    </div>
+      </li>
           </li>
         </ul>
       </header>
