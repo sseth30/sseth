@@ -166,13 +166,13 @@ const achievementSection = {
   display: true
 };
 
-const about = {
-  display: true,
-  title: "About Me",
-  description: `I’m a second-year Computer Engineering major at Georgia Tech, fascinated by how AI/ML can be integrated with hardware design to build cutting-edge solutions. My journey started with a small robotics project in high school, and ever since, I’ve been hooked on the idea of shaping technology to solve real-world challenges.
+// const about = {
+//   display: true,
+//   title: "About Me",
+//   description: `I’m a second-year Computer Engineering major at Georgia Tech, fascinated by how AI/ML can be integrated with hardware design to build cutting-edge solutions. My journey started with a small robotics project in high school, and ever since, I’ve been hooked on the idea of shaping technology to solve real-world challenges.
   
-  Beyond academics, I’m deeply involved in community work as the founder of MOMA, a nonprofit addressing food insecurity. These experiences have helped me develop strong leadership and collaboration skills. When I’m not coding or volunteering, I enjoy tinkering with new technologies and exploring how software and hardware can seamlessly merge.`,
-};
+//   Beyond academics, I’m deeply involved in community work as the founder of MOMA, a nonprofit addressing food insecurity. These experiences have helped me develop strong leadership and collaboration skills. When I’m not coding or volunteering, I enjoy tinkering with new technologies and exploring how software and hardware can seamlessly merge.`,
+// };
 
 const blogSection = {
   title: "Blogs",
