@@ -1,19 +1,14 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import "./AboutMe.scss";
+import "./AboutMe.scss"; // optional, if you had styles
 
 export default function AboutMe() {
   return (
-    <div>
-      <Header />
-      <div className="aboutme-main">
-        <h1>About Me</h1>
-        <p>
-          I'm a Computer Engineering student at Georgia Tech who loves blending AI/ML with hardware. When I'm not coding or building circuits, I run a nonprofit, explore smart home projects, and look for new ways to learn and collaborate.
-        </p>
-      </div>
-      <Footer />
+    <div className="about-me-container" style={{ padding: "2rem" }}>
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm Satchit! I'm a second-year Computer Engineering major at Georgia Tech with a passion for AI/ML and hardware design. 
+        When I'm not building things, I run a nonprofit and love working on home automation projects.
+      </p>
     </div>
   );
 }
