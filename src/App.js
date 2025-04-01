@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Main from "./containers/Main";
-import About from "./containers/about/About"; // You'll create this page
+import About from "./containers/about/About"; 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
