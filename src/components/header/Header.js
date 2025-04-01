@@ -28,11 +28,11 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <Link to="/" className="logo">
+        <a href="/sseth/#" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </Link>
+        </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -44,41 +44,54 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-  <a href="/sseth/#skills">Skills</a>
-</li>
-<li>
-  <a href="/sseth/#experience">Work Experiences</a>
-</li>
-<li>
-  <a href="/sseth/#projects">Open Source</a>
-</li>
-<li>
-  <a href="/sseth/#achievements">Achievements</a>
-</li>
-<li>
-  <a href="/sseth/#blogs">Blogs</a>
-</li>
-<li>
-  <a href="/sseth/#talks">Talks</a>
-</li>
-<li>
-  <a href="/sseth/#resume">Resume</a>
-</li>
-<li>
-  <a href="/sseth/#contact">Contact Me</a>
-</li>
-
+              <a href="/sseth/#skills">Skills</a>
+            </li>
+          )}
+          {viewExperience && (
+            <li>
+              <a href="/sseth/#experience">Work Experiences</a>
+            </li>
+          )}
+          {viewOpenSource && (
+            <li>
+              <a href="/sseth/#projects">Open Source</a>
+            </li>
+          )}
+          {viewAchievement && (
+            <li>
+              <a href="/sseth/#achievements">Achievements</a>
+            </li>
+          )}
+          {viewBlog && (
+            <li>
+              <a href="/sseth/#blogs">Blogs</a>
+            </li>
+          )}
+          {viewTalks && (
+            <li>
+              <a href="/sseth/#talks">Talks</a>
+            </li>
+          )}
+          {viewResume && (
+            <li>
+              <a href="/sseth/#resume">Resume</a>
+            </li>
+          )}
           <li>
-        <Link to="/about">About Me</Link>
-      </li>
-        <li>
-        <div>
-        <ToggleSwitch />
-    </div>
-      </li>
+            <a href="/sseth/#contact">Contact Me</a>
+          </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <div>
+              <ToggleSwitch />
+            </div>
+          </li>
         </ul>
       </header>
     </Headroom>
   );
 }
+
 export default Header;
