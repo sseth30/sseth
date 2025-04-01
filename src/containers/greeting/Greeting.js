@@ -30,25 +30,25 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Link to="/contact" className="download-link-button">
-                  <Button text="Contact me" />
-                </HashLink>
-                {greeting.resumeLink && (
-                  <a
-                    href={greeting.resumeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-                <Link to="/about" className="download-link-button">
-                  <Button text="About Me" />
-                </Link>
-              </div>
+<SocialMedia />
+<div className="button-greeting-div">
+  <Link to="/contact" className="download-link-button">
+    <Button text="Contact me" />
+  </Link>
+  {greeting.resumeLink && (
+    <a
+      href={greeting.resumeLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="download-link-button"
+    >
+      <Button text="Download my resume" />
+    </a>
+  )}
+  <Link to="/about" className="download-link-button">
+    <Button text="About Me" />
+  </Link>
+</div>
             </div>
           </div>
           <div className="greeting-image-div">
