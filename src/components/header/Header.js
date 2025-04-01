@@ -44,42 +44,30 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
-            </li>
-          )}
-          {viewExperience && (
-            <li>
-              <a href="#experience">Work Experiences</a>
-            </li>
-          )}
-          {viewOpenSource && (
-            <li>
-              <a href="#projects">Open Source</a>
-            </li>
-          )}
-          {viewAchievement && (
-            <li>
-              <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
-          <li>
-          <a href="#contact">Contact Me</a>
-          </li>
+  <a href="/sseth/#skills">Skills</a>
+</li>
+<li>
+  <a href="/sseth/#experience">Work Experiences</a>
+</li>
+<li>
+  <a href="/sseth/#projects">Open Source</a>
+</li>
+<li>
+  <a href="/sseth/#achievements">Achievements</a>
+</li>
+<li>
+  <a href="/sseth/#blogs">Blogs</a>
+</li>
+<li>
+  <a href="/sseth/#talks">Talks</a>
+</li>
+<li>
+  <a href="/sseth/#resume">Resume</a>
+</li>
+<li>
+  <a href="/sseth/#contact">Contact Me</a>
+</li>
+
           <li>
         <Link to="/about">About Me</Link>
       </li>
