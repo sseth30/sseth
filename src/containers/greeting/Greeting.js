@@ -50,6 +50,13 @@ export default function Greeting() {
                     <Button text="Download my resume" />
                   </a>
                 )}
+                  <a
+                    href="/about"
+                    rel="noopener noreferrer"
+                    className="download-link-button"
+                  >
+                    <Button text="About Me" />
+                  </a>
               </div>
             </div>
           </div>
