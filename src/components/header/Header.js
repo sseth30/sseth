@@ -44,41 +44,41 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#/skills">Skills</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#/experience">Work Experiences</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#projects">Open Source</a>
+              <a href="#/projects">Open Source</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#/achievements">Achievements</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#/blogs">Blogs</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#/talks">Talks</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#/resume">Resume</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#/contact">Contact Me</a>
           </li>
           <li>
             <Link to="/about">About Me</Link>
