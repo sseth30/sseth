@@ -6,10 +6,10 @@ import AboutMe from "./containers/about/AboutMe";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sseth">
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/about" component={AboutMe} />
+        <Route path="/about" component={AboutMe} />
       </Switch>
     </Router>
   );
