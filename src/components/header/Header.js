@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Headroom from "react-headroom";
 import "./Header.scss";
@@ -16,7 +16,7 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -28,7 +28,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <a href="#/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
@@ -37,48 +37,48 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#/skills">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#/experience">Work Experiences</a>
+              <a href="#experience">Work Experiences</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#/projects">Open Source</a>
+              <a href="#projects">Open Source</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#/achievements">Achievements</a>
+              <a href="#achievements">Achievements</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#/blogs">Blogs</a>
+              <a href="#blogs">Blogs</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#/talks">Talks</a>
+              <a href="#talks">Talks</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#/resume">Resume</a>
+              <a href="#resume">Resume</a>
             </li>
           )}
           <li>
-            <a href="#/contact">Contact Me</a>
+            <a href="#contact">Contact Me</a>
           </li>
           <li>
             <Link to="/about">About Me</Link>
