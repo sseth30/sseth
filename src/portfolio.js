@@ -17,7 +17,7 @@ const greeting = {
   username: "Satchit Seth",
   title: "Hi, I'm Satchit",
   subTitle: emoji(
-    "I’m a second-year Computer Engineering major at Georgia Tech with a passion for AI/ML and hardware design. Ever since my first robotics course, I’ve been fascinated by how software and hardware intersect to create impactful solutions.\n\nWhen I’m not coding or tinkering with circuits, you can find me exploring new volunteer initiatives with my nonprofit MOMA or experimenting with home automation projects. I’m always open to new challenges and collaborations!",
+    "2nd-year CompE @ Georgia Tech | Bridging AI/ML and Hardware"
   ),
   resumeLink: "https://sseth30.github.io/sseth/Resume.pdf",
   displayGreeting: true
