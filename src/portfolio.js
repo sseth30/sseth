@@ -62,7 +62,7 @@ const educationInfo = {
       schoolName: "Georgia Institute of Technology",
       logo: require("./assets/images/gtLogo.png"),
       subHeader: "B.S. in Computer Engineering",
-      duration: "Jan 2025 – May 2026",
+      duration: "Jan 2025 – Present",
       desc: "Threads: Distributed Systems & Software Design, Systems & Architecture | Relevant Coursework: Programming HW/SW Systems, Object-Oriented Design, Intro to ECE"
     },
     {
