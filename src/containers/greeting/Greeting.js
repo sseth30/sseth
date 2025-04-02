@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
@@ -12,14 +12,18 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
-    return null;
-  }
+  const [isLottieReady, setIsLottieReady] = useState(false);
+
+  useEffect(() => {
+    // Artificial delay removed — we preload instantly
+    setIsLottieReady(true);
+  }, []);
+
+  if (!greeting.displayGreeting) return null;
 
   return (
     <div className="greet-main" id="greeting">
       <div className="greeting-main">
-        {/* Text with Fade animation */}
         <div className="greeting-text-div">
           <Fade bottom duration={1000} distance="40px">
             <div>
@@ -50,9 +54,8 @@ export default function Greeting() {
           </Fade>
         </div>
 
-        {/* Lottie animation rendered immediately, outside Fade */}
         <div className="greeting-image-div animated-character">
-          {illustration.animated ? (
+          {illustration.animated && isLottieReady ? (
             <DisplayLottie animationData={landingPerson} />
           ) : (
             <img
