@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.scss";
-import myPic from "../../assets/images/satchit.jpg"; // <-- add your actual image path
+import myPic from "../../assets/images/satchit.jpg";
 
 export default function AboutMe() {
   return (
@@ -8,21 +8,28 @@ export default function AboutMe() {
       <div className="about-me-content">
         <img src={myPic} alt="Satchit Seth" className="about-me-image" />
         <h1>About Me</h1>
-    <p>
-      Hi, I'm Satchit! I'm a second-year Computer Engineering major at Georgia Tech
-      with a passion for AI/ML and hardware design. When I'm not building things,
-      I run a nonprofit and love working on various software projects.
-      </p>
-      <p>
-        I've always been fascinated with how computers work under the hood—what makes them tick, how they process information, and how they can be pushed to learn and adapt. That curiosity led me to explore both software engineering and hardware design, and eventually into the world of research, where I've worked on projects involving AI, robotics, deep learning and embedded systems.
-      </p>
+
         <p>
-            I originally started my academic journey at the University of Georgia, where I first majored in Mechanical Engineering. Over time, my growing interest in machine learning, low-level systems, and applied innovation motivated me to change my major to Computer Systems Engineering in Dec 2024, just before the second semester began. I had always wanted to become an engineer, so transferring to Georgia Tech was an absolute no-brainer. I successfully transferred to GT where I am currently pursuing my Bachelors Degree in Computer Engineering. My academic journey has been nothing less than an exciting transition that’s broadened my perspective and challenged me to think both like a coder and a circuit designer.
-        </p>
-        <p>
-          Outside of academics, I’m the founder of <strong>Meals for One, Meals for All</strong>, a nonprofit aimed at fighting food insecurity through community-driven solutions. I’m always looking for meaningful collaboration opportunities—whether it's building helpful tech or making a social impact. My hobbies include playing tennis/pickleball, hiking with my pet dog, and speedsolving/blindsolving the Rubik's Cube.
+          Hi, I'm <span className="highlight">Satchit</span> — a <span className="keyword">second-year Computer Engineering major</span> at <strong>Georgia Tech</strong> with a passion for{" "}
+          <span className="keyword">AI/ML</span>, low-level systems, and <span className="keyword">hardware design</span>. When I’m not building things, I run a nonprofit and tinker on side projects that bring real value to people.
         </p>
 
+        <p className="breakline">
+          I’ve always been curious about what makes computers tick — how they process, learn, and adapt. That led me to explore both <strong>software engineering</strong> and <strong>hardware systems</strong>, eventually branching into exciting research projects involving{" "}
+          <span className="keyword">AI</span>, <span className="keyword">robotics</span>, and <span className="keyword">embedded systems</span>.
+        </p>
+
+        <p className="breakline">
+          I began my academic journey at the <strong>University of Georgia</strong> as a Mechanical Engineering major. But in Dec 2024, I shifted to Computer Systems Engineering and later transferred to <strong>Georgia Tech</strong> — a bold, exciting move that’s shaped my ability to think both like a coder <em>and</em> a circuit designer.
+        </p>
+
+        <p className="breakline">
+          Outside of class, I founded <strong className="highlight">Meals for One, Meals for All</strong>, a nonprofit focused on fighting food insecurity through grassroots innovation. I'm always open to collaboration — whether it's building purposeful tech or driving positive change in the community.
+        </p>
+
+        <p className="breakline">
+          <em>Bonus facts?</em> I play tennis and pickleball 🏓, hike with my dog 🐾, and speedsolve/blindsolve Rubik’s Cubes in my spare time. 
+        </p>
       </div>
     </div>
   );
