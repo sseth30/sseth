@@ -1,9 +1,20 @@
 @import "./globalColor";
 
+html,
+body,
+#root,
 .App {
-  text-align: center;
+  background-color: #0f111a; // Set the background globally
+  margin: 0;
+  padding: 0;
   width: 100%;
   overflow-x: hidden;
+  color: $textColorDark;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-logo {
@@ -11,7 +22,7 @@
 }
 
 .App-header {
-  background-color: $appHeaderBG;
+  background-color: transparent; // Keep it transparent since the background is now set globally
   min-height: 100vh;
   display: flex;
   flex-direction: column;
