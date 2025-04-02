@@ -29,13 +29,17 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <HashLink smooth to="/#" className="logo hover-glow">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </a>
+        </HashLink>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label className="menu-icon" htmlFor="menu-btn" style={{ color: "white" }}>
+        <label
+          className="menu-icon"
+          htmlFor="menu-btn"
+          style={{ color: "white" }}
+        >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
