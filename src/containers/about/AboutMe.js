@@ -1,55 +1,53 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./AboutMe.scss";
 import myPic from "../../assets/images/satchit.jpg";
+import { Link } from "react-router-dom";
 
 export default function AboutMe() {
-  const handleImageClick = () => {
-    window.location.href = "/sseth/#contact"; // Adjust if you rename your GitHub repo again
-  };
-
   return (
     <div className="about-me-container">
       <div className="about-me-content">
+        <Link to="/" className="about-me-back">← Back to Home</Link>
+        <img
+          src={myPic}
+          alt="Satchit Seth"
+          className="about-me-image"
+          onClick={() =>
+            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <h1 className="about-me-title">About Me</h1>
 
-        {/* Back Button */}
-        <Link to="/" className="back-button">
-          ← Back to Home
-        </Link>
-
-        {/* Clickable Image */}
-        <a href="/sseth/#contact" title="Click to contact me!">
-  <img
-    src={myPic}
-    alt="Satchit Seth"
-    className="about-me-image"
-    style={{ cursor: "pointer" }}
-  />
-</a>
-
-
-        <h1>About Me</h1>
-
-        <p>
-          Hi, I'm <span className="highlight">Satchit</span> — a <span className="keyword">second-year Computer Engineering major</span> at <strong>Georgia Tech</strong> with a passion for{" "}
-          <span className="keyword">AI/ML</span>, low-level systems, and <span className="keyword">hardware design</span>. When I’m not building things, I run a nonprofit and tinker on side projects that bring real value to people.
+        <p className="about-me-text">
+          Hi, I'm <span className="highlight-name">Satchit</span> — a second-year{" "}
+          <span className="highlight">Computer Engineering</span> major at{" "}
+          <span className="highlight-school">Georgia Tech</span> with a passion for{" "}
+          <span className="highlight">AI/ML</span>, low-level systems, and hardware design. 
+          I run a nonprofit and love building meaningful side projects.
         </p>
 
-        <p className="breakline">
-          I’ve always been curious about what makes computers tick — how they process, learn, and adapt. That led me to explore both <strong>software engineering</strong> and <strong>hardware systems</strong>, eventually branching into exciting research projects involving{" "}
-          <span className="keyword">AI</span>, <span className="keyword">robotics</span>, and <span className="keyword">embedded systems</span>.
+        <p className="about-me-text">
+          I’ve always been curious about how computers tick — how they process, learn, and adapt. 
+          That led me to explore both <span className="highlight">software engineering</span> and{" "}
+          <span className="highlight">hardware systems</span>, eventually working on research projects involving{" "}
+          <span className="highlight">AI, robotics, and embedded systems</span>.
         </p>
 
-        <p className="breakline">
-          I began my academic journey at the <strong>University of Georgia</strong> as a Mechanical Engineering major. But in Dec 2024, I shifted to Computer Systems Engineering and later transferred to <strong>Georgia Tech</strong> — a bold, exciting move that’s shaped my ability to think both like a coder <em>and</em> a circuit designer.
+        <p className="about-me-text">
+          I started college at the <span className="highlight-school">University of Georgia</span> in{" "}
+          <span className="highlight">Mechanical Engineering</span>. But by Dec 2024, my curiosity led me to switch majors 
+          to <span className="highlight">Computer Systems Engineering</span> and transfer to GT — a bold move 
+          that shaped how I think as both a coder <em>and</em> circuit designer.
         </p>
 
-        <p className="breakline">
-          Outside of class, I founded <strong className="highlight">Meals for One, Meals for All</strong>, a nonprofit focused on fighting food insecurity through grassroots innovation. I'm always open to collaboration — whether it's building purposeful tech or driving positive change in the community.
+        <p className="about-me-text">
+          I’m the founder of <span className="highlight-org">Meals for One, Meals for All</span>, a nonprofit addressing{" "}
+          <span className="highlight">food insecurity</span> through grassroots innovation. I love collaborating — 
+          whether it's building smart tech or driving impact.
         </p>
 
-        <p className="breakline">
-          <em>Bonus facts?</em> I play tennis and pickleball 🏓, hike with my dog 🐾, and speedsolve/blindsolve Rubik’s Cubes in my spare time. 
+        <p className="about-me-text fun-facts">
+          <em>Bonus facts?</em> 🎾 I play tennis/pickleball, 🐾 hike with my dog, and 🧠 speedsolve Rubik’s cubes.
         </p>
       </div>
     </div>
