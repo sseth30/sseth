@@ -15,6 +15,11 @@ body,
 
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $lightBackground1;
+  color: $textColor;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App-logo {
@@ -38,4 +43,9 @@ body,
 
 .subTitle {
   color: $subTitle;
+}
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: $textColorDark;
 }
