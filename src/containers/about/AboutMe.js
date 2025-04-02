@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./AboutMe.scss";
 import myPic from "../../assets/images/satchit.jpg";
 import { Link } from "react-router-dom";
@@ -9,14 +10,14 @@ export default function AboutMe() {
       <div className="about-me-content">
         {/* Centered Image */}
         <div className="about-me-image-wrapper">
+          <HashLink to="/#contact" smooth>
           <img
             src={myPic}
             alt="Satchit Seth"
             className="about-me-image"
-            onClick={() =>
-              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-            }
+           title="Click to contact me"
           />
+        </HashLink>
         </div>
 
         <h1 className="about-me-title">About Me</h1>
