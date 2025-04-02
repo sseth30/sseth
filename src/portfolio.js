@@ -153,12 +153,12 @@ const achievementSection = {
     {
       title: "MTA: Software Development Fundamentals",
       subtitle: "Microsoft certification earned April 2022",
-      image: require("./assets/images/mtaLogo.png"),
-      imageAlt: "MTA Logo",
+      image: "/MTASoftwareDevFundCert.pdf", // ⬅️ Make the image link to the PDF
+      imageAlt: "Click to view certificate",
       footerLink: [
         {
           name: "Credential ID: 9007571",
-          url: ""
+          url: "/MTASoftwareDevFundCert.pdf" // ⬅️ Also link credential ID to PDF
         }
       ]
     }
