@@ -29,64 +29,44 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <HashLink smooth to="/#">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
-        </HashLink>
+        <div className="logo">
+          <HashLink smooth to="/#">
+            <span className="grey-color">&lt;</span>
+            <span className="logo-name">{greeting.username}</span>
+            <span className="grey-color">/&gt;</span>
+          </HashLink>
+        </div>
+
         <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{ color: "white" }}
-        >
+        <label className="menu-icon" htmlFor="menu-btn" style={{ color: "white" }}>
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
+
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
-            <li>
-              <HashLink smooth to="/#skills">Skills</HashLink>
-            </li>
+            <li><HashLink smooth to="/#skills">Skills</HashLink></li>
           )}
           {viewExperience && (
-            <li>
-              <HashLink smooth to="/#experience">Work Experiences</HashLink>
-            </li>
+            <li><HashLink smooth to="/#experience">Work Experiences</HashLink></li>
           )}
           {viewOpenSource && (
-            <li>
-              <HashLink smooth to="/#projects">Open Source</HashLink>
-            </li>
+            <li><HashLink smooth to="/#projects">Open Source</HashLink></li>
           )}
           {viewAchievement && (
-            <li>
-              <HashLink smooth to="/#achievements">Achievements</HashLink>
-            </li>
+            <li><HashLink smooth to="/#achievements">Achievements</HashLink></li>
           )}
           {viewBlog && (
-            <li>
-              <HashLink smooth to="/#blogs">Blogs</HashLink>
-            </li>
+            <li><HashLink smooth to="/#blogs">Blogs</HashLink></li>
           )}
           {viewTalks && (
-            <li>
-              <HashLink smooth to="/#talks">Talks</HashLink>
-            </li>
+            <li><HashLink smooth to="/#talks">Talks</HashLink></li>
           )}
           {viewResume && (
-            <li>
-              <HashLink smooth to="/#resume">Resume</HashLink>
-            </li>
+            <li><HashLink smooth to="/#resume">Resume</HashLink></li>
           )}
-          <li>
-            <HashLink smooth to="/#contact">Contact Me</HashLink>
-          </li>
-          <li>
-            <Link to="/about">About Me</Link>
-          </li>
-          <li>
-            <ToggleSwitch />
-          </li>
+          <li><HashLink smooth to="/#contact">Contact Me</HashLink></li>
+          <li><Link to="/about">About Me</Link></li>
+          <li><ToggleSwitch /></li>
         </ul>
       </header>
     </Headroom>
