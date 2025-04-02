@@ -52,6 +52,11 @@ export default function AboutMe() {
             whether it's building smart tech or driving impact.
           </p>
 
+          <p className="about-me-text">
+            Looking ahead, my long-term goal is to become a technical product leader at the intersection of <span className="highlight">embedded systems</span> and <span className="highlight">AI/ML</span> — driving innovation in industries like robotics, healthcare, or sustainable infrastructure. Guided by the <span className="highlight-school">ECE Roadmap</span>, I'm actively building a strong foundation in low-level computing, digital design, and machine learning while gaining hands-on experience through research, side projects, and internships. My plan is to keep learning by doing — taking challenging courses, contributing to real-world solutions, and eventually leading the development of intelligent, human-centered technologies.
+         </p>
+
+
           <p className="about-me-text fun-facts">
             <em>Bonus facts?</em> 🎾 I play tennis and pickleball, 🐾 hike with my dog, and 🧠 speedsolve Rubik’s cubes.
           </p>
