@@ -32,9 +32,9 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
 <SocialMedia />
 <div className="button-greeting-div">
-  <Link to="/#contact" className="download-link-button">
-    <Button text="Contact me" />
-  </Link>
+<HashLink smooth to="/#contact" className="download-link-button">
+  <Button text="Contact me" />
+</HashLink>
   {greeting.resumeLink && (
     <a
       href={greeting.resumeLink}
