@@ -14,8 +14,8 @@ export default function AchievementCard({cardInfo, isDark}) {
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
  <div className="certificate-image-div">
-  <a
-  href="/MTASoftwareDevFundCert.pdf"
+ <a
+  href={`${window.location.origin}/MTASoftwareDevFundCert.pdf`}
   target="_blank"
   rel="noopener noreferrer"
   title="Click to view certificate"
