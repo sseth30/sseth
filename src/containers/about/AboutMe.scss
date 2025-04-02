@@ -104,3 +104,16 @@
     }
   }
 }
+
+.glow-link {
+  color: #a259ff;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-link:hover {
+  text-shadow: 0 0 6px #a259ff, 0 0 12px #a259ff;
+  color: #c084fc;
+}
