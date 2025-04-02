@@ -69,11 +69,19 @@ function Header() {
               <HashLink smooth to="/#talks">Talks</HashLink>
             </li>
           )}
-          {viewResume && (
+          {viewResume && greeting.resumeLink && (
             <li>
-              <HashLink smooth to="/#resume">Resume</HashLink>
-            </li>
-          )}
+           <a
+          href={greeting.resumeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        download
+    >
+      Resume
+    </a>
+  </li>
+)}
+
           <li>
             <HashLink smooth to="/#contact">Contact Me</HashLink>
           </li>
