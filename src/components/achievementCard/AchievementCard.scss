@@ -75,3 +75,18 @@
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+
+.certificate-image-link {
+  cursor: pointer;
+}
+
+.card-image.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border-radius: 10px;
+}
+
+.card-image.hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.5);
+  filter: brightness(1.1);
+}
