@@ -18,14 +18,15 @@ export default function AboutMe() {
         </Link>
 
         {/* Clickable Image */}
-        <img
-          src={myPic}
-          alt="Satchit Seth"
-          className="about-me-image"
-          onClick={handleImageClick}
-          style={{ cursor: "pointer" }}
-          title="Click to contact me!"
-        />
+        <a href="/sseth/#contact" title="Click to contact me!">
+  <img
+    src={myPic}
+    alt="Satchit Seth"
+    className="about-me-image"
+    style={{ cursor: "pointer" }}
+  />
+</a>
+
 
         <h1>About Me</h1>
 
