@@ -15,7 +15,7 @@ export default function AboutMe() {
             src={myPic}
             alt="Satchit Seth"
             className="about-me-image"
-           title="title="📬 Click to contact me"
+           title="📬 Click to contact me"
           />
         </HashLink>
         </div>
