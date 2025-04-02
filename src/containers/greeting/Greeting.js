@@ -32,9 +32,11 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
 <SocialMedia />
 <div className="button-greeting-div">
+              {/*
 <a href="#contact" className="download-link-button">
   <Button text="Contact me" />
 </a>
+*/}
   {greeting.resumeLink && (
     <a
       href={greeting.resumeLink}
