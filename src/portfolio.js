@@ -153,18 +153,20 @@ const achievementSection = {
     {
       title: "MTA: Software Development Fundamentals",
       subtitle: "Microsoft certification earned April 2022",
-      image: "/MTASoftwareDevFundCert.pdf", // ⬅️ Make the image link to the PDF
+      image: require("./assets/images/mtaLogo.png"), // ✅ keep image here
+      imageLink: "/MTASoftwareDevFundCert.pdf", // ✅ new property for click
       imageAlt: "Click to view certificate",
       footerLink: [
         {
           name: "Credential ID: 9007571",
-          url: "/MTASoftwareDevFundCert.pdf" // ⬅️ Also link credential ID to PDF
+          url: "/MTASoftwareDevFundCert.pdf"
         }
       ]
     }
   ],
   display: true
 };
+
 
 // const about = {
 //   display: true,
