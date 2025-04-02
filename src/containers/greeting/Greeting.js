@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { Fade } from "react-reveal";
-import { Link as ScrollLink } from "react-scroll";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -17,11 +15,13 @@ export default function Greeting() {
   if (!greeting.displayGreeting) {
     return null;
   }
+
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
-          <div className="greeting-text-div">
+    <div className="greet-main" id="greeting">
+      <div className="greeting-main">
+        {/* Text with Fade animation */}
+        <div className="greeting-text-div">
+          <Fade bottom duration={1000} distance="40px">
             <div>
               <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
                 {greeting.title} <span className="wave-emoji">{emoji("👋")}</span>
@@ -30,42 +30,38 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
-<SocialMedia />
-<div className="button-greeting-div">
-              {/*
-<a href="#contact" className="download-link-button">
-  <Button text="Contact me" />
-</a>
-*/}
-  {greeting.resumeLink && (
-    <a
-      href={greeting.resumeLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="download-link-button"
-    >
-      <Button text="Download my resume" />
-    </a>
-  )}
-  <Link to="/about" className="download-link-button">
-    <Button text="About Me" />
-  </Link>
-</div>
+              <SocialMedia />
+              <div className="button-greeting-div">
+                {greeting.resumeLink && (
+                  <a
+                    href={greeting.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-link-button"
+                  >
+                    <Button text="Download my resume" />
+                  </a>
+                )}
+                <Link to="/about" className="download-link-button">
+                  <Button text="About Me" />
+                </Link>
+              </div>
             </div>
-          </div>
-         <div className="greeting-image-div animated-character">
-  {illustration.animated ? (
-    <DisplayLottie animationData={landingPerson} />
-  ) : (
-    <img
-      alt="man sitting on table"
-      src={require("../../assets/images/manOnTable.svg")}
-    />
-  )}
-</div>
+          </Fade>
+        </div>
 
+        {/* Lottie animation rendered immediately, outside Fade */}
+        <div className="greeting-image-div animated-character">
+          {illustration.animated ? (
+            <DisplayLottie animationData={landingPerson} />
+          ) : (
+            <img
+              alt="man sitting on table"
+              src={require("../../assets/images/manOnTable.svg")}
+            />
+          )}
         </div>
       </div>
-    </Fade>
+    </div>
   );
 }
