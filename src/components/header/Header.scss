@@ -6,16 +6,18 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  color: inherit;
 }
 
-.header .logo:hover,
 .header .logo:hover .grey-color,
 .header .logo:hover .logo-name {
   color: #a259ff !important;
   text-shadow: 0 0 8px #a259ff, 0 0 12px #a259ff;
 }
 
+/* Only applies glow on hover to elements with .hover-glow class */
 .hover-glow:hover {
-  text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
+  color: #a259ff !important;
+  text-shadow: 0 0 8px #a259ff, 0 0 16px #a259ff;
   transition: text-shadow 0.3s ease-in-out;
 }
