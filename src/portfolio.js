@@ -159,7 +159,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Credential ID: 9007571",
-          url: "/MTASoftwareDevFundCert.pdf" // Optional, or leave "" if unused
+          url: "" // Optional, or leave "" if unused
         }
       ]
     }
