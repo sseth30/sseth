@@ -55,9 +55,17 @@
   flex: none;
   float: left;
   font-size: 1.5em;
-  text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+  text-decoration: none; 
+  color: $textColor; 
+  transition: all 0.3s ease-in-out;
+}
+
+.header .logo:hover {
+  color: #a259ff; // soft purple
+  text-shadow: 0 0 8px #a259ff, 0 0 12px #a259ff;
+  transition: all 0.3s ease-in-out;
 }
 
 .header .logo-name {
