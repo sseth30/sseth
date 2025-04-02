@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import "./AboutMe.scss";
 import myPic from "../../assets/images/satchit.jpg";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade"; // ✅ import fade animation
+import Fade from "react-reveal/Fade"; 
 
 export default function AboutMe() {
   return (
@@ -29,7 +29,24 @@ export default function AboutMe() {
             <span className="highlight">Computer Engineering</span> major at{" "}
             <span className="highlight-school">Georgia Tech</span> with a passion for{" "}
             <span className="highlight">AI/ML</span>, low-level systems, and hardware design.
-            I run a nonprofit and love building meaningful side projects.
+            I run a nonprofit and love building meaningful side projects. My threads are{" "}
+            <a
+              href="https://ece.gatech.edu/distributed-system-software-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-link"
+            >
+              Distributed Systems & Software Design
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://ece.gatech.edu/systems-architecture-thread"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-link"
+            >
+              Systems & Architecture
+            </a>, combining the best of computing and hardware design.
           </p>
 
           <p className="about-me-text">
@@ -54,8 +71,7 @@ export default function AboutMe() {
 
           <p className="about-me-text">
             Looking ahead, my long-term goal is to become a technical product leader at the intersection of <span className="highlight">embedded systems</span> and <span className="highlight">AI/ML</span> — driving innovation in industries like robotics, healthcare, or sustainable infrastructure. Guided by the <span className="highlight-school">ECE Roadmap</span>, I'm actively building a strong foundation in low-level computing, digital design, and machine learning while gaining hands-on experience through research, side projects, and internships. My plan is to keep learning by doing — taking challenging courses, contributing to real-world solutions, and eventually leading the development of intelligent, human-centered technologies.
-         </p>
-
+          </p>
 
           <p className="about-me-text fun-facts">
             <em>Bonus facts?</em> 🎾 I play tennis and pickleball, 🐾 hike with my dog, and 🧠 speedsolve Rubik’s cubes.
