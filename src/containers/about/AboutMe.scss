@@ -111,7 +111,7 @@
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .glow-link:hover {
