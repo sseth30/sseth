@@ -1,12 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AboutMe.scss";
 import myPic from "../../assets/images/satchit.jpg";
 
 export default function AboutMe() {
+  const handleImageClick = () => {
+    window.location.href = "/sseth/#contact"; // Adjust if you rename your GitHub repo again
+  };
+
   return (
     <div className="about-me-container">
       <div className="about-me-content">
-        <img src={myPic} alt="Satchit Seth" className="about-me-image" />
+
+        {/* Back Button */}
+        <Link to="/" className="back-button">
+          ← Back to Home
+        </Link>
+
+        {/* Clickable Image */}
+        <img
+          src={myPic}
+          alt="Satchit Seth"
+          className="about-me-image"
+          onClick={handleImageClick}
+          style={{ cursor: "pointer" }}
+          title="Click to contact me!"
+        />
+
         <h1>About Me</h1>
 
         <p>
