@@ -121,11 +121,12 @@
 }
 
 .animated-character {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInCharacter 1s ease-out forwards;
-  animation-delay: 0.4s;
+  min-height: 400px; // Match Lottie size
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 @keyframes fadeInCharacter {
   to {
@@ -133,6 +134,7 @@
     transform: translateY(0);
   }
 }
+
 
 
 @media (max-width: 320px) {
