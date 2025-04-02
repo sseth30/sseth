@@ -14,3 +14,8 @@
   color: #a259ff !important;
   text-shadow: 0 0 8px #a259ff, 0 0 12px #a259ff;
 }
+
+.hover-glow:hover {
+  text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
+  transition: text-shadow 0.3s ease-in-out;
+}
