@@ -15,17 +15,17 @@ export default function AchievementCard({cardInfo, isDark}) {
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
  <div className="certificate-image-div">
   <a
-    href={process.env.PUBLIC_URL + "/MTASoftwareDevFundCert.pdf"}
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Click to view certificate"
-  >
-    <img
-      src={cardInfo.image}
-      alt={cardInfo.imageAlt || "Card Thumbnail"}
-      className="card-image"
-    />
-  </a>
+  href="/MTASoftwareDevFundCert.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Click to view certificate"
+>
+  <img
+    src={cardInfo.image}
+    alt={cardInfo.imageAlt || "Card Thumbnail"}
+    className="card-image"
+  />
+</a>
 </div>
 
 
