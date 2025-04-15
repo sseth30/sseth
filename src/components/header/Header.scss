@@ -37,7 +37,7 @@
 /* Logo styling */
 .header .logo {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.25em; /* ⬅️ reduced from 1.5em */
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
@@ -78,7 +78,7 @@
 }
 
 .header li {
-  margin: 0 10px;
+  margin: 0 6px; /* ⬅️ reduced spacing */
   display: flex;
   align-items: center;
   list-style: none;
@@ -89,6 +89,7 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  font-size: 0.95rem; /* ⬅️ shrink nav font */
   transition: color 0.3s ease-in-out;
   cursor: pointer;
 }
