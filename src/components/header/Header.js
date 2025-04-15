@@ -54,19 +54,9 @@ function Header() {
               <HashLink smooth to="/#projects">Open Source</HashLink>
             </li>
           )}
-          {viewOpenSource && (
-            <li>
-              <HashLink smooth to="/#projects">Open Source</HashLink>
-            </li>
-          )}
-            <li>
-              <HashLink smooth to="/#snakeProject">Projects</HashLink>
-            </li>
-          {viewAchievement && (
-            <li>
-              <HashLink smooth to="/#achievements">Achievements</HashLink>
-            </li>
-          )}
+          <li>
+            <HashLink smooth to="/#snakeProject">Projects</HashLink>
+          </li>
           {viewAchievement && (
             <li>
               <HashLink smooth to="/#achievements">Achievements</HashLink>
@@ -84,17 +74,16 @@ function Header() {
           )}
           {viewResume && greeting.resumeLink && (
             <li>
-           <a
-          href={greeting.resumeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        download
-    >
-      Resume
-    </a>
-  </li>
-)}
-
+              <a
+                href={greeting.resumeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Resume
+              </a>
+            </li>
+          )}
           <li>
             <HashLink smooth to="/#contact">Contact Me</HashLink>
           </li>
