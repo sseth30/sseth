@@ -54,6 +54,19 @@ function Header() {
               <HashLink smooth to="/#projects">Open Source</HashLink>
             </li>
           )}
+          {viewOpenSource && (
+            <li>
+              <HashLink smooth to="/#projects">Open Source</HashLink>
+            </li>
+          )}
+            <li>
+              <HashLink smooth to="/#snakeProject">Projects</HashLink>
+            </li>
+          {viewAchievement && (
+            <li>
+              <HashLink smooth to="/#achievements">Achievements</HashLink>
+            </li>
+          )}
           {viewAchievement && (
             <li>
               <HashLink smooth to="/#achievements">Achievements</HashLink>
