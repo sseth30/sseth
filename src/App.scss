@@ -8,7 +8,7 @@ body,
   width: 100%;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  background-color: $lightBackground1; // default light background
+  background-color: $lightBackground1;
   color: $textColor;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -51,11 +51,15 @@ body,
 
   a,
   p,
+  span,
   h1, h2, h3, h4, h5, h6,
   .card-title,
   .card-subtitle,
   .subTitle {
+    color: $textColorDark !important;
+  }
+
+  .App-link {
     color: $textColorDark;
   }
 }
-
