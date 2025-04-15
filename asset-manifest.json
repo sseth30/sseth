@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sseth/static/css/main.e65729ee.css",
+    "main.css": "/sseth/static/css/main.ed302232.css",
     "main.js": "/sseth/static/js/main.e0ae4f85.js",
     "static/css/64.bba8fa55.chunk.css": "/sseth/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/sseth/static/js/64.56dc6704.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/skill.svg": "/sseth/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/sseth/index.html",
     "static/media/talksCardBack.svg": "/sseth/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.e65729ee.css.map": "/sseth/static/css/main.e65729ee.css.map",
+    "main.ed302232.css.map": "/sseth/static/css/main.ed302232.css.map",
     "main.e0ae4f85.js.map": "/sseth/static/js/main.e0ae4f85.js.map",
     "64.bba8fa55.chunk.css.map": "/sseth/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/sseth/static/js/64.56dc6704.chunk.js.map",
@@ -30,7 +30,7 @@
     "769.bda0d7b7.chunk.js.map": "/sseth/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e65729ee.css",
+    "static/css/main.ed302232.css",
     "static/js/main.e0ae4f85.js"
   ]
 }
