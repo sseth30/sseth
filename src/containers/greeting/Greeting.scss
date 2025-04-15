@@ -18,7 +18,11 @@
 }
 
 .subTitle {
-  color: $subTitle !important;
+  color: $subTitle;
+}
+
+.dark-mode .subTitle {
+  color: $textColorDark;
 }
 
 .greeting-main {
@@ -45,12 +49,21 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: $textColor;
+}
+
+.dark-mode .greeting-text {
+  color: $textColorDark;
 }
 
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  color: $textColor;
+}
+
+.dark-mode .greeting-text-p {
+  color: $textColorDark;
 }
 
 .greeting-image-div > img {
