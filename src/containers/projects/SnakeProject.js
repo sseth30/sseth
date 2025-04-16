@@ -1,6 +1,9 @@
 import React from "react";
 import "./SnakeProject.scss";
 
+import pinoutImg from "../../assets/images/lpc1768-pinout.png";
+import circuitImg from "../../assets/images/snake-circuit-layout.png";
+
 export default function SnakeProject() {
   return (
     <div className="snake-project-section" id="snakeProject">
@@ -32,11 +35,11 @@ export default function SnakeProject() {
 
       <div className="snake-diagrams">
         <div className="diagram">
-          <img src="/assets/images/lpc1768-pinout.png" alt="LPC1768 Pinout Diagram" />
+          <img src={pinoutImg} alt="LPC1768 Pinout Diagram" />
           <div className="caption">📌 LPC1768 Pinout - GPIO and peripheral references for wiring.</div>
         </div>
         <div className="diagram">
-          <img src="/assets/images/snake-circuit-layout.png" alt="Snake Circuit Layout" />
+          <img src={circuitImg} alt="Snake Circuit Layout" />
           <div className="caption">📷 Circuit layout connecting the LCD, navigation switch, and MBED LPC1768.</div>
         </div>
       </div>
