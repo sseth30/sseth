@@ -47,6 +47,61 @@ export default function SnakeProject() {
         </li>
       </ul>
 
+          {/*  ──────────────────────────────────────────  */}
+{/*  Discovery‑style narrative                                                     */}
+{/*  ──────────────────────────────────────────  */}
+<section className="discovery-wrap">
+
+  {/* 1. Starting idea / pitch */}
+  <h3>Discovery Project&nbsp;Idea 🚀</h3>
+  <p>
+    The original pitch was to rebuild the nostalgic <em>Snake</em> arcade
+    game entirely on an <strong>MBED LPC1768</strong>, proving that modern
+    embedded boards could deliver smooth animation and responsive controls
+    without a dedicated GPU.
+  </p>
+
+  {/* 2. Progress over the semester */}
+  <h3>Project Progress 📈</h3>
+  <p>
+    • Week&nbsp;3&nbsp;&ndash;&nbsp;basic LCD driver and frame buffer <br/>
+    • Week&nbsp;6&nbsp;&ndash;&nbsp;navigation‑switch input debounce <br/>
+    • Week&nbsp;9&nbsp;&ndash;&nbsp;game‑loop timing with SysTick <br/>
+    • Week&nbsp;12&nbsp;&ndash;&nbsp;scoreboard splash screen + EEPROM save
+  </p>
+
+  {/* 3. Successes & failures */}
+  <h3>Successes&nbsp;&amp;&nbsp;Roadblocks 🛣️</h3>
+  <ul>
+    <li><strong>✅ Success:</strong> 50 FPS refresh without tearing</li>
+    <li><strong>✅ Success:</strong> modular render pipeline is reusable</li>
+    <li><strong>⚠️ Roadblock:</strong> EMI noise from long LCD ribbon caused ghosting – fixed by
+        adding series resistors</li>
+    <li><strong>⚠️ Roadblock:</strong> navigation‑switch PCB footprint
+        was mirrored 😬 (hand‑wired jumper fix)</li>
+  </ul>
+
+  {/* 4. ECE skills gained */}
+  <h3>ECE Skills Gained 🛠️</h3>
+  <ul>
+    <li>C/​C++ bare‑metal programming &nbsp;(<code>CMSIS</code>)</li>
+    <li>SPI bus analysis on a logic analyzer</li>
+    <li>Fixed‑point math for animation timing</li>
+    <li>Low‑speed PCB layout &amp; Signal‑Integrity tweaks</li>
+  </ul>
+
+  {/* 5. Final thoughts */}
+  <h3>Final Thoughts 💡</h3>
+  <p>
+    Building a game from scratch on real silicon cemented my interest in the
+    <strong> Systems &amp; Architecture</strong> thread. I plan to carry the
+    project forward next semester by adding BLE so scores sync to a phone
+    companion app. Stay tuned!
+  </p>
+</section>
+{/*  ──────────────────────────────────────────  */}
+
+
       <p>
         Looking ahead, I’d like to explore <strong>wireless scoreboards</strong> (e.g., logging
         high scores to a remote server), <strong>power optimization</strong> for battery-based
