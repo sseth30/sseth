@@ -27,36 +27,38 @@
     margin-bottom: 0.5rem;
   }
 
-.snake-diagrams {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
+  .snake-diagrams {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .diagram {
-    flex: 1;
-    text-align: center;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    .caption {
-      font-size: 0.95rem;
-      margin-top: 10px;
-      color: $subTitle;
-      padding: 0 0.5rem;
+    .diagram {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .caption {
+        font-size: 0.95rem;
+        margin-top: 10px;
+        color: $subTitle;
+        padding: 0 0.5rem;
+      }
     }
   }
-}
-
-
 }
