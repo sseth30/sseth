@@ -38,6 +38,20 @@
     }
   }
 
+  .discovery-wrap {
+  margin-top: 3rem;
+
+  h3 {
+    font-size: 1.45rem;
+    margin: 2.2rem 0 0.8rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;   /* matches earlier list style */
+    li { margin-bottom: 0.4rem; }
+  }
+}
+
   /* Container for images */
   .snake-diagrams {
     display: flex;
