@@ -9,11 +9,13 @@
 
 .greeting-main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2rem;               
+  flex-wrap: wrap;     
 }
+
 
 .greeting-text-div, .greeting-image-div {
   flex: 1;
