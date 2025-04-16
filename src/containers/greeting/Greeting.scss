@@ -9,18 +9,16 @@
 
 .greeting-main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .greeting-text-div {
   flex: 1;
-  min-width: 300px;
-  text-align: left; // ✅ left-align text section
-  padding-left: 1rem;
+  min-width: 320px;
+  text-align: left;
+  padding-left: 2rem; // ← original left padding style
 }
 
 .greeting-image-div {
@@ -28,6 +26,7 @@
   min-width: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .subTitle {
@@ -47,7 +46,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 40px;
-  justify-content: flex-start; // ✅ buttons aligned left
+  justify-content: flex-start;
 }
 
 .download-link-button {
@@ -59,7 +58,9 @@
   line-height: 1.1;
   color: $textColor;
   margin-bottom: 20px;
-  text-align: left; // ✅ left-aligned title
+  display: flex; // ✅ to keep emoji on same line
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .dark-mode .greeting-text {
@@ -71,19 +72,15 @@
   line-height: 1.6;
   color: $textColor;
   margin: 0;
-  text-align: left; // ✅ left-aligned subtitle
+  text-align: left;
 }
 
 .dark-mode .greeting-text-p {
   color: $textColorDark;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-
 .wave-emoji {
+  font-size: 1em;
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
   animation-name: wave;
@@ -101,31 +98,34 @@
   100% { transform: rotate(0deg); }
 }
 
-/* Responsive Layouts */
-@media (max-width: 1024px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-
-  .greeting-text-p {
-    font-size: 22px;
-  }
+.greeting-image-div > img {
+  max-width: 100%;
+  height: auto;
 }
 
+.animated-character {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .greeting-main {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .greeting-text-div {
     padding-left: 0;
-    text-align: center; // ✅ only center on mobile
+    text-align: center;
   }
 
   .greeting-text {
     font-size: 36px;
-    text-align: center;
+    justify-content: center;
   }
 
   .greeting-text-p {
@@ -136,15 +136,4 @@
   .button-greeting-div {
     justify-content: center;
   }
-
-  .greeting-image-div {
-    height: auto;
-  }
-}
-
-.animated-character {
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
