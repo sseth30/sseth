@@ -1,7 +1,7 @@
 import React from "react";
 import "./SnakeProject.scss";
-import lpcPinout from "../../assets/images/lpc1768-pinout.png";
-import snakeCircuit from "../../assets/images/snake-circuit-layout.png";
+import pinoutImg from "../../assets/images/lpc1768-pinout.png";
+import circuitImg from "../../assets/images/snake-circuit-layout.png";
 
 export default function SnakeProject() {
   return (
@@ -32,17 +32,17 @@ export default function SnakeProject() {
         Future expansions include power management, wireless scoreboard tracking, and more advanced graphics.
       </p>
 
-      <div className="snake-diagrams">
-        <div className="diagram">
-          <img src={lpcPinout} alt="LPC1768 Pinout Diagram" />
-          <p className="caption">📌 LPC1768 Pinout - GPIO and peripheral references for wiring.</p>
-        </div>
+   <div className="snake-diagrams">
+  <div className="diagram">
+    <img src={pinoutImg} alt="LPC1768 Pinout Diagram" />
+    <div className="caption">📌 LPC1768 Pinout - GPIO and peripheral references for wiring.</div>
+  </div>
+  <div className="diagram">
+    <img src={circuitImg} alt="Snake Circuit Layout" />
+    <div className="caption">📷 Circuit layout connecting the LCD, navigation switch, and MBED LPC1768.</div>
+  </div>
+</div>
 
-        <div className="diagram">
-          <img src={snakeCircuit} alt="Snake Circuit Layout" />
-          <p className="caption">📷 Circuit layout connecting the LCD, navigation switch, and MBED LPC1768.</p>
-        </div>
-      </div>
     </div>
   );
 }
