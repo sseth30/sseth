@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sseth/static/css/main.625bd54d.css",
-    "main.js": "/sseth/static/js/main.3c73efd7.js",
+    "main.js": "/sseth/static/js/main.155810b3.js",
     "static/css/64.bba8fa55.chunk.css": "/sseth/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/sseth/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/sseth/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/sseth/static/js/769.bda0d7b7.chunk.js",
     "static/media/dialectify.png": "/sseth/static/media/dialectify.0cdee0cdf1b193967abc.png",
-    "static/media/satchit.jpg": "/sseth/static/media/satchit.2e8ad90c8b70da7cfccb.jpg",
+    "static/media/satchit.jpg": "/sseth/static/media/satchit.9a9c0c0de38fababc00c.jpg",
     "static/media/momaLogo.png": "/sseth/static/media/momaLogo.b4e9ae8412aafd595664.png",
     "static/media/Montserrat-Regular.ttf": "/sseth/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/lpc1768-pinout.png": "/sseth/static/media/lpc1768-pinout.c0462bcbf2f8d271af7b.png",
@@ -25,7 +25,7 @@
     "index.html": "/sseth/index.html",
     "static/media/talksCardBack.svg": "/sseth/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.625bd54d.css.map": "/sseth/static/css/main.625bd54d.css.map",
-    "main.3c73efd7.js.map": "/sseth/static/js/main.3c73efd7.js.map",
+    "main.155810b3.js.map": "/sseth/static/js/main.155810b3.js.map",
     "64.bba8fa55.chunk.css.map": "/sseth/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/sseth/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/sseth/static/css/769.b3cbb36b.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.625bd54d.css",
-    "static/js/main.3c73efd7.js"
+    "static/js/main.155810b3.js"
   ]
 }
