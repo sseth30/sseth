@@ -4,6 +4,9 @@ import pinoutImg from "../../assets/images/lpc1768-pinout.png";
 import circuitImg from "../../assets/images/snake-circuit-layout.png";
 
 export default function SnakeProject() {
+  console.log("pinoutImg =>", pinoutImg);
+console.log("circuitImg =>", circuitImg);
+
   return (
     <div className="snake-project-section" id="snakeProject">
       <h1>
