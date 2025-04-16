@@ -1,20 +1,23 @@
 @import "../../_globalColor";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
 }
 
 .greeting-main {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.greeting-text-div, .greeting-image-div {
+  flex: 1;
+  min-width: 300px;
 }
 
 .subTitle {
@@ -25,23 +28,17 @@
   color: $textColorDark;
 }
 
-.greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-
 .empty-div {
   margin-bottom: 40px;
 }
 
 .button-greeting-div {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 40px;
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -50,6 +47,7 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor;
+  margin-bottom: 20px;
 }
 
 .dark-mode .greeting-text {
@@ -57,9 +55,10 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 1.6;
   color: $textColor;
+  margin: 0;
 }
 
 .dark-mode .greeting-text-p {
@@ -80,78 +79,52 @@
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(-10deg); }
+  20%  { transform: rotate(12deg); }
+  30%  { transform: rotate(-10deg); }
+  40%  { transform: rotate(9deg); }
+  50%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Responsive Layouts */
+@media (max-width: 1024px) {
   .greeting-text {
     font-size: 50px;
   }
+
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
   .greeting-main {
-    display: block;
+    flex-direction: column;
+    text-align: center;
   }
+
+  .greeting-text {
+    font-size: 36px;
+  }
+
+  .greeting-text-p {
+    font-size: 18px;
+  }
+
+  .button-greeting-div {
+    justify-content: center;
+  }
+
   .greeting-image-div {
-    height: 256px;
+    height: auto;
   }
 }
 
 .animated-character {
-  min-height: 400px; // Match Lottie size
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-@keyframes fadeInCharacter {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-@media (max-width: 320px) {
-  .main {
-    width: auto;
-  }
 }
