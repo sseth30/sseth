@@ -78,7 +78,7 @@ export default function SnakeProject() {
     <li><strong>⚠️ Roadblock:</strong> EMI noise from long LCD ribbon caused ghosting – fixed by
         adding series resistors</li>
     <li><strong>⚠️ Roadblock:</strong> navigation‑switch PCB footprint
-        was mirrored 😬 (hand‑wired jumper fix)</li>
+        was mirrored (hand‑wired jumper fix)</li>
   </ul>
 
   {/* 4. ECE skills gained */}
