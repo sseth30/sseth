@@ -66,7 +66,7 @@ export default function SnakeProject() {
   <p>
     • Week&nbsp;3&nbsp;&ndash;&nbsp;basic LCD driver and frame buffer <br/>
     • Week&nbsp;6&nbsp;&ndash;&nbsp;navigation‑switch input debounce <br/>
-    • Week&nbsp;9&nbsp;&ndash;&nbsp;game‑loop timing with SysTick <br/>
+    • Week&nbsp;9&nbsp;&ndash;&nbsp;game‑loop timing on MBED Studio <br/>
     • Week&nbsp;12&nbsp;&ndash;&nbsp;scoreboard splash screen + EEPROM save
   </p>
 
@@ -75,10 +75,9 @@ export default function SnakeProject() {
   <ul>
     <li><strong>✅ Success:</strong> 50 FPS refresh without tearing</li>
     <li><strong>✅ Success:</strong> modular render pipeline is reusable</li>
-    <li><strong>⚠️ Roadblock:</strong> EMI noise from long LCD ribbon caused ghosting – fixed by
-        adding series resistors</li>
-    <li><strong>⚠️ Roadblock:</strong> navigation‑switch PCB footprint
-        was mirrored (hand‑wired jumper fix)</li>
+    <li><strong>⚠️ Roadblock:</strong> Baud rate issues </li>
+    <li><strong>⚠️ Roadblock:</strong> navigation‑switch would not 
+    sync in real time with LCD (hand‑wired jumper fix)</li>
   </ul>
 
   {/* 4. ECE skills gained */}
@@ -95,8 +94,8 @@ export default function SnakeProject() {
   <p>
     Building a game from scratch on real silicon cemented my interest in the
     <strong> Systems &amp; Architecture</strong> thread. I plan to carry the
-    project forward next semester by adding BLE so scores sync to a phone
-    companion app. Stay tuned!
+    project forward by adding more features to the game, and more hardware
+    such as speakers. Stay tuned!
   </p>
 </section>
 {/*  ──────────────────────────────────────────  */}
