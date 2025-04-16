@@ -32,22 +32,12 @@ export default function SnakeProject() {
 
       <div className="snake-diagrams">
         <div className="diagram">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/images/lpc1768-pinout.png"}
-            alt="LPC1768 Pinout Diagram"
-          />
-          <div className="caption">
-            📌 LPC1768 Pinout - GPIO and peripheral references for wiring.
-          </div>
+          <img src="/assets/images/lpc1768-pinout.png" alt="LPC1768 Pinout Diagram" />
+          <div className="caption">📌 LPC1768 Pinout - GPIO and peripheral references for wiring.</div>
         </div>
         <div className="diagram">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/images/snake-circuit-layout.png"}
-            alt="Snake Circuit Layout"
-          />
-          <div className="caption">
-            📷 Circuit layout connecting the LCD, navigation switch, and MBED LPC1768.
-          </div>
+          <img src="/assets/images/snake-circuit-layout.png" alt="Snake Circuit Layout" />
+          <div className="caption">📷 Circuit layout connecting the LCD, navigation switch, and MBED LPC1768.</div>
         </div>
       </div>
     </div>
