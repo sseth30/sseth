@@ -10,16 +10,24 @@
 .greeting-main {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
-  align-items: center;     
-  gap: 2rem;               
-  flex-wrap: wrap;     
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-
-.greeting-text-div, .greeting-image-div {
+.greeting-text-div {
   flex: 1;
   min-width: 300px;
+  text-align: left; // ✅ left-align text section
+  padding-left: 1rem;
+}
+
+.greeting-image-div {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 .subTitle {
@@ -39,6 +47,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 40px;
+  justify-content: flex-start; // ✅ buttons aligned left
 }
 
 .download-link-button {
@@ -50,6 +59,7 @@
   line-height: 1.1;
   color: $textColor;
   margin-bottom: 20px;
+  text-align: left; // ✅ left-aligned title
 }
 
 .dark-mode .greeting-text {
@@ -61,6 +71,7 @@
   line-height: 1.6;
   color: $textColor;
   margin: 0;
+  text-align: left; // ✅ left-aligned subtitle
 }
 
 .dark-mode .greeting-text-p {
@@ -107,12 +118,19 @@
     text-align: center;
   }
 
+  .greeting-text-div {
+    padding-left: 0;
+    text-align: center; // ✅ only center on mobile
+  }
+
   .greeting-text {
     font-size: 36px;
+    text-align: center;
   }
 
   .greeting-text-p {
     font-size: 18px;
+    text-align: center;
   }
 
   .button-greeting-div {
